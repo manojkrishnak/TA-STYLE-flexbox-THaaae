@@ -1,0 +1,60 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta >
+         <link rel="stylesheet" href="./assets/css/style.css">
+         <title>Blog and Gallery - Flexbox</title>
+     </head>
+     <body>
+         <header class="header clearfix">
+                <a class="logo" href="#">
+                    <img src="/assets/images/logo.jpg" alt="logo">
+                </a>
+             <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact Us</a>
+             </nav>
+         </header>
+         <main>
+             <div class="container">
+                <article class=" row-1 flex">
+                    <div class="blog">
+                        <h1>Lorem Ipsum dolor Ipsum solor</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur et asperiores sed labore qui totam fugiat, cupiditate placeat quidem corrupti repudiandae ipsum iure dignissimos. Eligendi autem in vitae eum. Voluptate tenetur et asperiores sed labore qui totam fugiat, cupiditate placeat quidem corrupti repudiandae ipsum iure dignissimos.</p>
+                    </div>
+                    <div>
+                        <img class="blog-img" src="/assets/images/pic01.jpg" alt="pic01">
+                    </div>
+                </article>
+                <h2>Gallery</h2>
+                <div class="gallery flex">
+                    <img src="/assets/images/pic02.jpg" alt="pic 02">
+                    <img src="/assets/images/pic03.jpg" alt="pic 3">
+                    <img src="/assets/images/pic04.jpg" alt="pic 4">
+                    <img src="/assets/images/pic05.jpg" alt="pic 5">
+                    <img src="/assets/images/pic06.jpg" alt="pic 6">
+                    <img src="/assets/images/pic06.jpg" alt="pic 7">
+                </div>
+             </div>
+         </main>
+         <footer class="footer">
+             <p>All rights reserved</p>
+         </footer>
+     </body>
+ </html>
