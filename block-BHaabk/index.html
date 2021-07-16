@@ -20,41 +20,61 @@
          <link rel="stylesheet" href="./assets/css/style.css">
          <title>Blog and Gallery - Flexbox</title>
      </head>
-     <body>
-         <header class="header clearfix">
-                <a class="logo" href="#">
-                    <img src="/assets/images/logo.jpg" alt="logo">
-                </a>
-             <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Contact Us</a>
-             </nav>
+     <body id="top">
+            <header class="header">
+                <div class="container flex">
+                    <a class="logo" href="#">
+                        <img src="./assets/images/logo.jpg" alt="logo">
+                    </a>
+                 <nav class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contact Us</a>
+                 </nav>
+                </div>
          </header>
          <main>
-             <div class="container">
-                <article class=" row-1 flex">
-                    <div class="blog">
-                        <h1>Lorem Ipsum dolor Ipsum solor</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur et asperiores sed labore qui totam fugiat, cupiditate placeat quidem corrupti repudiandae ipsum iure dignissimos. Eligendi autem in vitae eum. Voluptate tenetur et asperiores sed labore qui totam fugiat, cupiditate placeat quidem corrupti repudiandae ipsum iure dignissimos.</p>
+            <section class="article-section">
+                <article class="container flex">
+                    <div class="col">
+                        <h1 class="article-heading">This is the article heading</h1>
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nemo. Error qui corporis corrupti aperiam a, minus ea sint laudantium, laborum aliquam voluptatem debitis, accusantium perspiciatis! Assumenda dolor asperiores saepe.lore Lorem, ipsum dolor</p>
+                        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi vero sint sit ab explicabo necessitatibus cumque eos officia ducimus vel, illum, adipisci incidunt dolores ut! Pariatur ullam reiciendis minima iste?</p>
                     </div>
-                    <div>
-                        <img class="blog-img" src="/assets/images/pic01.jpg" alt="pic01">
+                    <div class="col">
+                        <img class="article-img" src="./assets/images/pic01.jpg" alt="pic 1">
                     </div>
                 </article>
-                <h2>Gallery</h2>
-                <div class="gallery flex">
-                    <img src="/assets/images/pic02.jpg" alt="pic 02">
-                    <img src="/assets/images/pic03.jpg" alt="pic 3">
-                    <img src="/assets/images/pic04.jpg" alt="pic 4">
-                    <img src="/assets/images/pic05.jpg" alt="pic 5">
-                    <img src="/assets/images/pic06.jpg" alt="pic 6">
-                    <img src="/assets/images/pic06.jpg" alt="pic 7">
+            </section>
+            <section class="gallery">
+                <div class="container">
+                    <h2 class="gallery-heading">Gallery</h2>
+                    <div class="flex">
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic02.jpg" alt="pic 2">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic03.jpg" alt="pic 3">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic04.jpg" alt="pic 4">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic05.jpg" alt="pic 5">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic06.jpg" alt="pic 6">
+                        </div>
+                        <div class="gallery-img">
+                            <img src="./assets/images/pic07.jpg" alt="pic 7">
+                        </div>
+                    </div>
                 </div>
-             </div>
-         </main>
-         <footer class="footer">
-             <p>All rights reserved</p>
-         </footer>
+            </section>
+            <footer>
+                <p class="footer-text">All rights reserved</p>
+            </footer>
+            <a class="to-top" href="#top">Top</a>
+        </main>
      </body>
  </html>
