@@ -1,0 +1,74 @@
+<!-- 
+- Create a gallery using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/65f4240069.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flexbox - Assignment -1</title>
+  </head>
+  <body>
+      <header class="header">
+          <div class="container flex">
+              <a class="logo" href="#">
+                  <img class="brand-logo" src="./assets/images/altcampusLogo.png" alt="logo">
+              </a>
+              <nav class="navbar">
+                  <a href="#">Home</a>
+                  <a class="selected-page" href="#">Gallery</a>
+                  <a href="#">About</a>
+              </nav>
+          </div>
+      </header>
+      <section class="gallery">
+        <div>
+            <h1 class="heading">Gallery</h1>
+        </div>
+          <div class="container flex">
+              <div class="col">
+                  <img class="gallery-img" src="./assets/images/01.png" alt="pic 1">
+              </div>
+              <div class="col">
+                <img class="gallery-img" src="./assets/images/02.png" alt="pic 2">
+            </div>
+            <div class="col">
+                <img  class="gallery-img" src="./assets/images/03.png" alt="pic 3">
+            </div>
+            <div class="col">
+                <img class="gallery-img" src="./assets/images/04.png" alt="pic 4">
+            </div>
+            <div class="col">
+                <img class="gallery-img" src="./assets/images/05.png" alt="pic 5">
+            </div>
+            <div class="col">
+                <img class="gallery-img" src="./assets/images/06.png" alt="pic 6">
+            </div>
+          </div>
+      </section>
+      <footer class="footer">
+          <div class="container flex">
+              <span>&copy; AltCampus</span>
+              <div>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+              </div>
+          </div>
+      </footer>
+  </body>
+</html>
